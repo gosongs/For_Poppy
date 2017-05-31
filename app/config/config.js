@@ -10,8 +10,8 @@ config = {
   ],
   // 通过阿里大鱼平台发送短信
   sms: {
-    appKey: '23873072', // 申请的 app key
-    appSecret: 'fbaeacdcb40fdf130305fd3204b46226', // 申请的 app secret
+    appKey: 'app key', // 申请的 app key
+    appSecret: 'app secret', // 申请的 app secret
     signName: '超级小远远', // 短信签名名称
     templateID: 'SMS_69260175' // 短信模板ID
   }
