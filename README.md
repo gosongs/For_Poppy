@@ -1,8 +1,7 @@
 ## Nodejs 爬虫
 哄女朋友必备.
 
-<img src="./images/joke.png" style="width: 50%; display:inline-block;"/>
-<img src="./images/wether.png" style="width: 50%; display:inline-block;"/>
+<img src="./images/joke.png" style="width: 50%; display:inline-block;"/><img src="./images/wether.png" style="width: 50%; display:inline-block;"/>
 
 ## Features
 + [node-schedule](https://github.com/node-schedule/node-schedule): nodejs定时任务;
