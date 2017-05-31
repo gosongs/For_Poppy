@@ -14,6 +14,9 @@ config = {
     appSecret: 'app secret', // 申请的 app secret
     signName: '超级小远远', // 短信签名名称
     templateID: 'SMS_69260175' // 短信模板ID
+  },
+  email: {
+    pass: 'xxxxxxx' // 163 邮箱授权码, 注意不是密码
   }
 };
 

@@ -16,7 +16,7 @@ var EMAIL = {
   port: 465,
   auth: {
     user: 'by_openwater@163.com',
-    pass: 'liuzhiyuan1993'
+    pass: config.email.pass
   }
 };
 for (var i = 1; i <= maxPageNum; i++) {
@@ -93,7 +93,7 @@ function fireEmail(email, callback) {
     }
     html += t;
   });
-  
+
   var data = {
     from: EMAIL.auth.user,
     to: email,
