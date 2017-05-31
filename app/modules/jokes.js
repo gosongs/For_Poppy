@@ -1,12 +1,12 @@
 const cheerio = require('cheerio');
 const request = require('request');
 const async = require('async');
-const config = require('./config');
+const config = require('../config/config');
 const nodemailer = require("nodemailer");
 
 let pageNum = 1;
 let maxPageNum = 20;
-let jokeType = '8hr';
+let jokeType = '24hr'; // 24小时
 
 var jokesData = [];
 var urls = [];
@@ -20,7 +20,7 @@ var EMAIL = {
   }
 };
 for (var i = 1; i <= maxPageNum; i++) {
-  // https://www.qiushibaike.com/8hr/page/2/?s=4987343
+  // https://www.qiushibaike.com/24hr/page/2/?s=4987343
   urls.push(`http://www.qiushibaike.com/${jokeType}/page/${i}/?s=4978418`)
 }
 
@@ -34,7 +34,7 @@ async.mapLimit(urls, 1, function (url, callback) {
   jokesData.sort(function (a, b) {
     return b.likes - a.likes;
   });
-  jokesData = jokesData.slice(0, 15);
+  jokesData = jokesData.slice(0, 20);
   sendEmail();
 });
 
@@ -97,7 +97,7 @@ function fireEmail(email, callback) {
   var data = {
     from: EMAIL.auth.user,
     to: email,
-    subject: '糗事百科8小时点赞最多的15条笑话',
+    subject: '糗事百科24小时点赞最多的20条笑话',
     html: html
   };
   var transporter = nodemailer.createTransport(EMAIL);

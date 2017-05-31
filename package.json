@@ -1,13 +1,12 @@
 {
-  "name": "crawler",
+  "name": "For_Poppy",
   "version": "1.0.0",
-  "description": "",
+  "description": "Love Poppy",
   "main": "index.js",
   "scripts": {
-    "start": "node app/timing_task",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app/main"
   },
-  "author": "",
+  "author": "go_songs@163.com",
   "license": "ISC",
   "dependencies": {
     "alidayu-node": "^1.0.3",
