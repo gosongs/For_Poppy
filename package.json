@@ -4,7 +4,8 @@
   "description": "Love Poppy",
   "main": "index.js",
   "scripts": {
-    "start": "node app/main"
+    "start": "node app/main.js",
+    "build": "node app/build.js"
   },
   "author": "go_songs@163.com",
   "license": "ISC",

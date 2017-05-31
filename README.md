@@ -1,8 +1,8 @@
 ## Nodejs 爬虫
 哄女朋友必备.
 
-![](./images/joke.png)
-![](./images/wether.png)
+<img src="./images/joke.png" style="width: 50%; display:inline-block;"/>
+<img src="./images/wether.png" style="width: 50%; display:inline-block;"/>
 
 ## Features
 + [node-schedule](https://github.com/node-schedule/node-schedule): nodejs定时任务;
@@ -15,6 +15,8 @@
 git clone https://github.com/gosongs/For_Poppy.git
 cd For_Poppy
 npm install
+
+# 修改 app/config.bak.js 为 app/config.js
 
 # 爬取24小时热门内容, 筛选出点赞数最多的20条, 每天下午6点以邮件的形式发送
 node app/modules/jokes.js
