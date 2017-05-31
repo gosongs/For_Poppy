@@ -1,0 +1,29 @@
+{
+  "name": "crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app/timing_task",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "alidayu-node": "^1.0.3",
+    "async": "^2.4.1",
+    "axios": "^0.16.1",
+    "cheerio": "^0.22.0",
+    "eventproxy": "^0.3.5",
+    "express": "^4.15.3",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.18.1",
+    "node-schedule": "^1.2.3",
+    "nodemailer": "^4.0.1",
+    "promise": "^7.1.1",
+    "request": "^2.81.0",
+    "shelljs": "^0.7.7",
+    "superagent": "^3.5.2",
+    "xml2js": "^0.4.17"
+  }
+}
