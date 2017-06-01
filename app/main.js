@@ -4,7 +4,7 @@ var shelljs = require('shelljs');
 var moment = require('moment');
 
 // 每天晚上六点发送笑话
-var jokeTask = schedule.scheduleJob('0 0 18 * * *', fireJoke);
+var jokeTask = schedule.scheduleJob('0 0 10 * * *', fireJoke);
 
 // 每天早上八点发送天气
 var wetherTask = schedule.scheduleJob('0 0 8 * * *', fireWether);
